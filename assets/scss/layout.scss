@@ -1,9 +1,19 @@
-body{
-    margin: 0;
-    /* text-align:center ; */
-    #layout-main{
-        height: 100%;
-        
-        // text-align: center;
+html{
+     height:100%;
+     
+     body{ 
+        min-height:100%; 
+        padding:0; 
+        margin:0; 
+        position:relative; 
+        }
+    
     }
-}
+
+
+  
+  body::after {
+    content: '';
+    display: block;
+    height: 120px; /* Set same as footer's height */
+  }
