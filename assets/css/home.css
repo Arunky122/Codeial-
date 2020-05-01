@@ -1,13 +1,18 @@
 body {
   margin: 0;
   background-color: #aabce4; }
-  body #home-container {
-    display: flex; }
-    body #home-container #feed-posts {
-      width: 80%;
-      padding: 10px; }
-    body #home-container #user-friends {
-      width: 20%;
-      padding: 10px;
-      border-left: 2px solid lightgrey;
-      height: 100%; }
+  body main {
+    height: 100%; }
+    body main #home-container {
+      display: flex;
+      min-height: 100%; }
+      body main #home-container #feed-posts {
+        width: 80%;
+        padding: 10px; }
+      body main #home-container #user-friends {
+        width: 20%;
+        padding: 10px;
+        border-left: 2px solid lightgrey;
+        min-height: 100%;
+        position: absolute;
+        left: 82%; }
