@@ -1,0 +1,91 @@
+body{
+    margin: 0;
+    padding: 0;
+    background: url('/images/img1.jpg');
+    background-repeat: repeat;
+    background-size: cover;
+    #box{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform:translate(-50%,-50%);
+        width: 400px;
+        background: #fff;
+        padding: 40px;
+        box-sizing: border-box;
+        border: 1px solid rgba(0,0,0,0.1);
+        box-shadow: 0 5px 10px rgba(0,0,0,0.2) ;
+        border-radius: 10px;
+
+        h1{
+            margin: 0 0 40px;
+            padding: 0;
+            color:#2969c9;
+            text-transform: capitalize;
+        }
+
+        input{
+            padding: 10px 0;
+            margin-bottom: 30px;
+            width: 100%;
+            box-sizing: border-box;
+            box-shadow: none;
+            border: none;
+            outline: none;
+            border-bottom: 2px solid #999;
+
+        }
+        button{
+            // border-bottom: none;
+            cursor: pointer;
+            padding: 10px 0;
+            width: 100%;
+            background: #2969c9;
+            // border: none;
+            color: #fff;
+            margin-bottom: 0;
+            text-transform: uppercase;
+            font-size: .9rem;
+            font-weight: bold;
+            border-radius: 10px;
+
+        }
+
+        form {
+            div{
+                position: relative;
+                label{
+                    position: absolute;
+                    top: 10px;
+                    left: 0px;
+                    pointer-events: none;
+                    transition: 0.5s;
+                    color: #999;
+
+                }
+
+                input:focus ~ label,input:valid ~ label{
+                    top:-13px;
+                    left: 0;
+                    color: #2969c9;
+                    font-size: 12px;
+                    font-weight: bold;
+                }
+                input:focus,input:valid{
+                    border-bottom: 2px solid #2969c9;
+                    transition: 0.5s;
+                }
+                button:hover{
+                    background-color: #fff;
+                    color: #2969c9;
+                    // border: 0.5px solid #2969c9;
+                    transition: 0.3s;
+                }
+            }
+        }
+
+
+    }
+    
+
+}
