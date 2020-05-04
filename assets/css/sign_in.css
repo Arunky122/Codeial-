@@ -35,12 +35,14 @@ body {
       padding: 10px 0;
       width: 100%;
       background: #2969c9;
+      border: none;
       color: #fff;
       margin-bottom: 0;
       text-transform: uppercase;
       font-size: .9rem;
       font-weight: bold;
-      border-radius: 10px; }
+      border-radius: 10px;
+      outline: none; }
     body #box form div {
       position: relative; }
       body #box form div label {
@@ -59,7 +61,3 @@ body {
       body #box form div input:focus, body #box form div input:valid {
         border-bottom: 2px solid #2969c9;
         transition: 0.5s; }
-      body #box form div button:hover {
-        background-color: #fff;
-        color: #2969c9;
-        transition: 0.3s; }

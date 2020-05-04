@@ -3,14 +3,16 @@ body{
     padding: 0;
     background: url('/images/img1.jpg');
     background-repeat: repeat;
+    position: relative;
+    
     background-size: cover;
     #box{
         position: absolute;
         top: 50%;
         left: 50%;
         transform:translate(-50%,-50%);
-        width: 400px;
-        background: #fff;
+        width: 400px ;
+        background-color: #fff !important;
         padding: 40px;
         box-sizing: border-box;
         border: 1px solid rgba(0,0,0,0.1);
@@ -41,13 +43,14 @@ body{
             padding: 10px 0;
             width: 100%;
             background: #2969c9;
-            // border: none;
+            border: none;
             color: #fff;
             margin-bottom: 0;
             text-transform: uppercase;
             font-size: .9rem;
             font-weight: bold;
             border-radius: 10px;
+            outline: none;
 
         }
 
@@ -75,17 +78,29 @@ body{
                     border-bottom: 2px solid #2969c9;
                     transition: 0.5s;
                 }
-                button:hover{
-                    background-color: #fff;
-                    color: #2969c9;
-                    // border: 0.5px solid #2969c9;
-                    transition: 0.3s;
-                }
+                
             }
         }
 
 
     }
+
     
 
 }
+// body ::after{
+//     content: '';
+//     position: absolute;
+//     top:0;
+//     left: 0;
+//     right: 0;
+//     bottom: 0;
+
+//     // width: 100%;
+//     // height: 100%;
+//     background: url('/images/img1.jpg');
+//     background-size: cover;
+//     background-repeat: no-repeat;
+//     z-index: -1;
+//     opacity: 0.5;
+// }
