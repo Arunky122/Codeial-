@@ -80,6 +80,27 @@ body{
             }
         }
 
+        p{
+            text-align: center;
+            margin-top: 30px;
+            a{
+                text-decoration: none;
+                color: #2969c9;
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                font-size: 1.1rem;
+                font-weight: bold;
+                // transition: .4s;
+                // transition:  border-bottom 0.2s
+
+            }
+
+            a:hover{
+                
+                border-bottom: 2px solid #2969c9;
+
+            }
+        }
+
 
     }
     
